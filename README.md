@@ -14,3 +14,14 @@ XAMPP es un paquete de software libre, que consiste principalmente en el sistema
 MOSEK version 9.2
 
 MOSEK es un paquete de software para la solución de problemas de optimización matemática no lineal lineal, de entero mixto lineal, cuadrática, de entero mixto cuadrática, de restricción cuadrática, cónica y convexa no lineal.
+
+## Run algoritmo
+
+1. AbriR XAMPP e inicialiar los servicios de MySQL y Apache.
+2. Abrir Matlab y cargar la carpeta que contienen el algorimo (Matlab).
+3. En la pestaña APP 
+               |
+               data base explorer 
+                                |
+                                 conecct
+                                 

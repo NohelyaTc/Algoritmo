@@ -16,7 +16,7 @@ MOSEK version 9.2
 MOSEK es un paquete de software para la solución de problemas de optimización matemática no lineal lineal, de entero mixto lineal, cuadrática, de entero mixto cuadrática, de restricción cuadrática, cónica y convexa no lineal.
 
 # Instalación de software
-Mosek: una vez instalado tiene que activarse la licencia. 
+Mosek: dispoble en www.monsek.com una vez instalado tiene que activarse la licencia. 
 
 
 ## Run algoritmo

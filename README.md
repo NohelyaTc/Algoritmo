@@ -18,12 +18,17 @@ MOSEK es un paquete de software para la solución de problemas de optimización 
 ## Run algoritmo
 
 1. AbriR XAMPP e inicialiar los servicios de MySQL y Apache.
-2. Abrir Matlab y cargar la carpeta que contienen el algorimo (Matlab).
+2. Cargar el archivo odbcconfig.mat
+3. Abrir Matlab y cargar la carpeta que contienen el algorimo (Matlab).
     
     Ir a la pestaña |APP| y buscar |data base explorer| seleccionar |conecct|
     
     En la ventana colocar el usuario: gah y password:123456 de la ase de datos y concetar.
- 
+
+4. Inicializar Ipl.m ubicado en la carpeta src. 
+5. Abrir config.m ubicado en src y ejecutarlo, abrira una ventana donde se selccioanra add patch. 
+6. Correr main_dsrm.m el archivo principal del algoritmo. 
+
 
 
 

@@ -19,7 +19,9 @@ MOSEK es un paquete de software para la solución de problemas de optimización 
 
 1. AbriR XAMPP e inicialiar los servicios de MySQL y Apache.
 2. Abrir Matlab y cargar la carpeta que contienen el algorimo (Matlab).
+    
     Ir a la pestaña ||APP|| en ||data base explorer|| seleccionar ||conecct||
+    
     En la ventana colocar el usuario: gah y password:123456 de la ase de datos y concetar. 
 
                                  

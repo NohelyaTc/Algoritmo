@@ -43,7 +43,7 @@ Normalmente el límite por defecto son 2 Mb, quedando de esta forma:
 
 -post_max_size= 2M
 
-Poner en esa línea el tamañao máximo del archivo que importemos. Si queremos tener un máximo de 20 Mb, por ejemplo, quedaría así: 
+Poner en esa línea el tamaño máximo del archivo que importemos. Si queremos tener un máximo de 1000 Mb, por ejemplo, quedaría así: 
 
 -upload_max_filesize = 1000M
 

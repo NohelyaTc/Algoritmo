@@ -49,7 +49,18 @@ Poner en esa línea el tamaño máximo del archivo que importemos. Si queremos t
 
 -post_max_size= 1000Mb
 
+
+Cuando importamos un archivo muy grande desde phpmyadmin en XAMPP puede que tardemos mucho tiempo en cargarlo y nos avise de un error. 
+
+También hay que modificar el php.ini cambiando los valores por los siguientes:
+
+
+- max_execution_time = 5000
+ 
+- max_input_time = 5000
+
 Grabamos el archivo y reiniciamos apache.
+
 
 Cuando volvamos a intentar importar un archivo en una base de datos en phpmyadmin tendremos un tamaño máximo de 1000 Mb.
 

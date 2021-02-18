@@ -16,6 +16,16 @@ MOSEK version 9.2
 MOSEK es un paquete de software para la solución de problemas de optimización matemática no lineal lineal, de entero mixto lineal, cuadrática, de entero mixto cuadrática, de restricción cuadrática, cónica y convexa no lineal.
 
 # Instalación de software
+
+Nos podemos encontrar el problema que el tamaño máximo a importar en phpmyadmin es inferior al tamaño de nuestra copia de la base de datos que queremos importar.
+
+Para solucionar este problema tenemos que hacer lo siguiente:
+
+Ir al archivo php.ini de nuestro Apache
+Buscar la línea donde tenemos: upload_max_filesize. Normalmente el límite por defecto son 2 Mb, quedando de esta forma: upload_max_filesize = 2M
+Poner en esa línea el tamañao máximo del archivo que importemos. Si queremos tener un máximo de 20 Mb, por ejemplo, quedaría así: upload_max_filesize = 20M
+Grabamos el archivo y reiniciamos apache.
+Cuando volvamos a intentar importar un archivo en una base de datos en phpmyadmin tendremos un tamaño máximo de 20 Mb
 Mosek: dispoble en www.monsek.com una vez instalado tiene que activarse la licencia. 
 
 

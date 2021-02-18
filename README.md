@@ -22,10 +22,23 @@ Nos podemos encontrar el problema que el tamaño máximo a importar en phpmyadmi
 Para solucionar este problema tenemos que hacer lo siguiente:
 
 Ir al archivo php.ini de nuestro Apache
-Buscar la línea donde tenemos: upload_max_filesize. Normalmente el límite por defecto son 2 Mb, quedando de esta forma: upload_max_filesize = 2M
-Poner en esa línea el tamañao máximo del archivo que importemos. Si queremos tener un máximo de 20 Mb, por ejemplo, quedaría así: upload_max_filesize = 20M
+Buscar la línea donde tenemos: 
+-upload_max_filesize
+-post_max_size=4Mb
+
+Normalmente el límite por defecto son 2 Mb, quedando de esta forma: 
+-upload_max_filesize = 2M
+-post_max_size= 2M
+
+Poner en esa línea el tamañao máximo del archivo que importemos. Si queremos tener un máximo de 20 Mb, por ejemplo, quedaría así: 
+
+-upload_max_filesize = 1000M
+-post_max_size= 1000Mb
+
 Grabamos el archivo y reiniciamos apache.
-Cuando volvamos a intentar importar un archivo en una base de datos en phpmyadmin tendremos un tamaño máximo de 20 Mb
+
+Cuando volvamos a intentar importar un archivo en una base de datos en phpmyadmin tendremos un tamaño máximo de 1000 Mb.
+
 Mosek: dispoble en www.monsek.com una vez instalado tiene que activarse la licencia. 
 
 

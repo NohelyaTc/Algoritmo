@@ -17,14 +17,20 @@ MOSEK es un paquete de software para la solución de problemas de optimización 
 
 # Instalación de software
 
+Mosek: dispoble en www.monsek.com una vez instalado tiene que activarse la licencia. 
+
+
+
 # Configuración de la base de datos 
 
 Nos podemos encontrar el problema que el tamaño máximo a importar en phpmyadmin es inferior al tamaño de nuestra copia de la base de datos que queremos importar.
 
 Para solucionar este problema tenemos que hacer lo siguiente:
 
-Abrir el panel de control de Xampp
-En el botón #config muestra un menu de opciones seleccionar #PHP(php.ini)
+Abrir el panel de control de Xampp. 
+
+En el botón #config# muestra un menu de opciones seleccionar PHP(php.ini). 
+
 Ir al archivo php.ini de nuestro Apache y buscar la línea donde tenemos: 
 
 -upload_max_filesize
@@ -46,8 +52,6 @@ Poner en esa línea el tamañao máximo del archivo que importemos. Si queremos 
 Grabamos el archivo y reiniciamos apache.
 
 Cuando volvamos a intentar importar un archivo en una base de datos en phpmyadmin tendremos un tamaño máximo de 1000 Mb.
-
-Mosek: dispoble en www.monsek.com una vez instalado tiene que activarse la licencia. 
 
 
 ## Run algoritmo

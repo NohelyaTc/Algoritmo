@@ -68,16 +68,33 @@ Cuando volvamos a intentar importar un archivo en una base de datos en phpmyadmi
 ## Run algoritmo
 
 1. AbriR XAMPP e inicialiar los servicios de MySQL y Apache.
-2. Cargar el archivo odbcconfig.mat
-3. Abrir Matlab y cargar la carpeta que contienen el algorimo (Matlab).
+
+2. Abrir Matlab y cargar la carpeta que contienen el algorimo (Matlab).
+    Introduzca el comando pathtool en MATLAB. Presione el botón |Add with subfolders| y en la ventana que aparece seleccione las carpeta de funciones (data, docs, jsonlab,   samples, setup y src). Guarde los cambios con el botón Save y cierre la ventana.
     
+ 3. configurar la ip de la pc en Matlab para la base de datos.
+ 
+ 4. Cargar el archivo odbcconfig.mat
+   
+ 5. conectar a la base de datos.   
     Ir a la pestaña |APP| y buscar |data base explorer| seleccionar |conecct|
     
-    En la ventana colocar el usuario: gah y password:123456 de la ase de datos y concetar.
+    En la ventana colocar el usuario: gah y password:123456 de la base de datos y conectar.
 
-4. Inicializar Ipl.m ubicado en la carpeta src. 
-5. Abrir config.m ubicado en src y ejecutarlo, abrira una ventana donde se selccioanra add patch. 
-6. Correr main_dsrm.m el archivo principal del algoritmo. 
+ 6. Configuración
+
+   En la carpeta setup se encuentran tres archivos. Si al crear las bases de datos se utilizaron otros nombres de base de datos, tablas, host, puertos, usuarios o se usa una contraseña entonces es necesario modificar el archivo config.m para reflejar estos cambios.
+
+config.m: Configuración del paquete de funciones.
+
+init.m: Inicialización.
+
+profilestring.m: Perfiles para diferentes idiomas.
+
+
+6. Inicializar Ipl.m ubicado en la carpeta src. 
+7. Abrir config.m ubicado en src y ejecutarlo, abrira una ventana donde se selccioanr |add patch|. 
+8. Correr main_dsrm.m el archivo principal del algoritmo. 
 
 
 

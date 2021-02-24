@@ -23,7 +23,7 @@ Mosek: dispoble en www.monsek.com una vez instalado tiene que activarse la licen
 
 # Configuración de la base de datos 
 
-Nos podemos encontrar el problema que el tamaño máximo a importar en phpmyadmin es inferior al tamaño de nuestra copia de la base de datos que queremos importar.
+1. Nos podemos encontrar el problema que el tamaño máximo a importar en phpmyadmin es inferior al tamaño de nuestra copia de la base de datos que queremos importar.
 
 Para solucionar este problema tenemos que hacer lo siguiente:
 
@@ -33,15 +33,10 @@ En el botón #config# muestra un menu de opciones seleccionar PHP(php.ini).
 
 Ir al archivo php.ini de nuestro Apache y buscar la línea donde tenemos: 
 
--upload_max_filesize
-
--post_max_size=4Mb
-
-Normalmente el límite por defecto son 2 Mb, quedando de esta forma: 
-
 -upload_max_filesize = 2M
 
 -post_max_size= 2M
+
 
 Poner en esa línea el tamaño máximo del archivo que importemos. Si queremos tener un máximo de 1000 Mb, por ejemplo, quedaría así: 
 
@@ -49,20 +44,26 @@ Poner en esa línea el tamaño máximo del archivo que importemos. Si queremos t
 
 -post_max_size= 1000Mb
 
+Cuando volvamos a intentar importar un archivo en una base de datos en phpmyadmin tendremos un tamaño máximo de 1000 Mb.
 
-Cuando importamos un archivo muy grande desde phpmyadmin en XAMPP puede que tardemos mucho tiempo en cargarlo y nos avise de un error. 
+2. Cuando importamos un archivo muy grande desde phpmyadmin en XAMPP puede que tardemos mucho tiempo en cargarlo y nos avise de un error. 
 
 También hay que modificar el php.ini cambiando los valores por los siguientes:
-
 
 - max_execution_time = 5000
  
 - max_input_time = 5000
 
 Grabamos el archivo y reiniciamos apache.
+  
+Ruta de config.default.php = \xampp\phpMyAdmin\libraries\config.default.php
+Asignar un valor a la siguiente variable: $cfg['ExecTimeLimit']
+ 
+$cfg['ExecTimeLimit'] = 30000;
+ 
 
+Con esto tendría que poder subir nuevamente el script SQL para importar sin problemas con phpMyAdmin. Recuerden reiniciar Apache.
 
-Cuando volvamos a intentar importar un archivo en una base de datos en phpmyadmin tendremos un tamaño máximo de 1000 Mb.
 
 
 ## Run algoritmo

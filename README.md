@@ -75,7 +75,7 @@ Con esto tendría que poder subir nuevamente el script SQL para importar sin pro
     
  3. configurar la ip de la pc en Matlab para la base de datos.
  
- 4. Cargar el archivo odbcconfig.mat
+ 4. Cargar el archivo odbcconfig.mat que se encuentra en la carpeta MATLAB/z programas
    
  5. conectar a la base de datos.   
     Ir a la pestaña |APP| y buscar |data base explorer| seleccionar |conecct|
@@ -97,6 +97,8 @@ profilestring.m: Perfiles para diferentes idiomas.
 7. Abrir config.m ubicado en src y ejecutarlo, abrira una ventana donde se selccioanr |add patch|. 
 8. Correr main_dsrm.m el archivo principal del algoritmo. 
 
+
+9. Correr s5_ubicacion_ambulancias_yulmip, que se encuentra en la carpeta sample
 
 
 
